@@ -80,6 +80,8 @@ public class PuyoPuyo extends Game2D {
 		//modeの初期化(STEP4)
 		char mode = 's';
 
+		String ip = "./img/";
+
 /**
  * コンストラクタ。
  * mapの初期化と背景設定。
@@ -94,21 +96,21 @@ public class PuyoPuyo extends Game2D {
 					for(int j = 1; j < 15; j++)
 						map[i][j] = 0;
 			//枠の画像
-			sprite.addGrp(0, "w.gif");
+			sprite.addGrp(0, ip+"w.gif");
 			//色の画像
-			sprite.addGrp(1, "r.gif");
-			sprite.addGrp(2, "g.gif");
-			sprite.addGrp(3, "b.gif");
-			sprite.addGrp(4, "y.gif");
-			
+			sprite.addGrp(1, ip+"r.gif");
+			sprite.addGrp(2, ip+"g.gif");
+			sprite.addGrp(3, ip+"b.gif");
+			sprite.addGrp(4, ip+"y.gif");
+
 			//連鎖するときのボイス
-			sp.addSe(0, "CH08VO00.wav");
-			sp.addSe(1, "CH08VO01.wav");
-			sp.addSe(2, "CH08VO07.wav");
-			sp.addSe(3, "CH08VO08.wav");
-			sp.addSe(4, "CH08VO06.wav");
-			sp.addSe(5, "CH08VO09.wav");
-			sp.addSe(6, "CH08VO10.wav");
+			sp.addSe(0, ip+"CH08VO00.wav");
+			sp.addSe(1, ip+"CH08VO01.wav");
+			sp.addSe(2, ip+"CH08VO07.wav");
+			sp.addSe(3, ip+"CH08VO08.wav");
+			sp.addSe(4, ip+"CH08VO06.wav");
+			sp.addSe(5, ip+"CH08VO09.wav");
+			sp.addSe(6, ip+"CH08VO10.wav");
 
 			// 背景の設定
 			for(int i=0; i<13; i++){
@@ -344,7 +346,7 @@ public class PuyoPuyo extends Game2D {
 						sprite.setPlaneString(scoreboard2+1, String.valueOf(score));
 						sprite.setPlanePos(scoreboard2+1, 16*8, 16*11);
 						sprite.setPlaneColor(scoreboard2+1,255,255,255);
-						
+
 						//連鎖ボイス。連鎖数によってボイスをかえる
 						if(rensaCount == 1){
 							sp.playSe(0);
