@@ -16,3 +16,5 @@ xzで回転
 ・回し
 ・ファジー
 ・２度押しで回転とかetc...
+
+[プレイ画面](https://github.com/takumi001/puyopuyo/blob/master/image.png)
