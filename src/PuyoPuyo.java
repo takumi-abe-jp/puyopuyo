@@ -80,7 +80,7 @@ public class PuyoPuyo extends Game2D {
 		//modeの初期化(STEP4)
 		char mode = 's';
 
-		String ip = "./img/";
+		String ip = "img/";
 
 /**
  * コンストラクタ。
